@@ -1,0 +1,239 @@
+/* Rules display */
+#rule1{
+    display:none;
+    margin-left: 20px;
+}
+/* ____________________________________________________________________________________ */
+
+body{
+    background-color:#575DA9 !important;
+}
+/* main body panel */
+#mainBody{
+    background-color:#575DA9;
+    font-family: 'Delius', cursive;
+    margin-top: 70px;
+}
+/* ________________________________________________________________________________ */
+/* Panel for displaying questions */
+#questionPlaceHolder{
+    height: 160px;
+    text-align: center;
+    font-size: 35px;
+    overflow: auto;
+}
+
+/* ________________________________________________________________________________ */
+/* Score and remaining chances Pannel */
+.scoreAndremainingChances{
+    height: 160px;
+    text-align: center;
+    background-color: #787dba !important;
+    color: white;
+    font-family: 'Delius', cursive;
+}
+
+.scoreAndremainingChancesHeading{
+    background-color: #787dba !important;
+    color: white !important;
+    font-size: 18px;
+    height: 40px;
+    /* margin-top: -10px; */
+    padding-bottom: 35px !important;
+}
+
+/* Remaining Score - html inside the panel */
+#remainingChances{
+    font-size: 6em;
+    font-weight: 500;
+    margin-top: -30px;
+
+}
+
+/* your Score - html inside the panel */
+#yourScore{
+    font-size: 6em;
+    text-align: center;
+    font-weight: 500;
+    margin-top: -30px;
+}
+
+/* ________________________________________________________________________________ */
+/* Panel for displaying answer */
+#answerPlaceHolder{
+    text-align: center;
+}
+
+.answerBoxes{
+    height: 100px ;
+    width: 100px ;
+    border: 2px solid black;
+    text-align: center;
+    display: inline-block;
+    margin: 2px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: aquamarine;
+    vertical-align: top;
+}
+
+/* __________________________________________________________________________________ */
+/* Panel to display wrong letters */
+#wrongLettersPlaceHolder{
+    /* height: 200px; */
+    text-align: center;
+
+}
+
+.wrongLetters{
+    height: 100px ;
+    width: 100px ;
+    border: 2px solid black;
+    text-align: center;
+    display: inline-block;
+    margin: 2px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: orange;  
+    color: white;     
+    vertical-align: top;
+}
+/* ________________________________________________________________________________ */
+/* panel to display info */
+/* Display info panel head */
+#displayInfoPanel{
+    text-align: center;
+
+}
+
+/* Display panel Head styling */
+#displayInfoPanelHead{
+    font-size: 3em;
+    background-color:limegreen;
+    line-height: 0.7;
+    text-align: center;
+    border : 1px solid white; 
+    color: white;
+    text-transform:capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* Display info panel body */
+#displayInfoPanelBody{
+    height: 220px;
+    text-align: center;
+    border : 1px solid white; 
+    font-size: 28px;
+    overflow: auto;
+
+}
+
+#displayInfoPanelFooter{
+    text-align: right;
+    background-color:#2ECC71;
+    border : 1px solid white; 
+    color: white;
+    font-weight: 500;
+     
+}
+/* _________________________________________________________________________________________________________ */
+
+/* panel to display game rules */
+/* Display info panel head */
+#displayRulesPanel{
+    text-align: center;
+    margin-top: 10px;
+    width:95%;
+    
+}
+
+/* Display panel Head styling */
+#displayRulesPanelHead{
+    /* font-size: 3em; */
+    background-color:#575DA9;
+    line-height: 0.7;
+    text-align: center;
+    border : 1px solid white; 
+    color: white;
+    text-transform:capitalize;
+    font-size: 28px;
+    font-weight: 700;
+}
+/* Display info panel body */
+#displayRulesPanelBody{
+    height: 360px;
+    text-align: center;
+    /* border : 1px solid white;  */
+    font-size: 28px;
+    overflow: hidden;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+#displayRulesPanelFooter{
+    text-align: right;
+    background-color:#575DA9;
+    border : 1px solid white; 
+    color: white;
+    font-weight: 500;   
+}
+
+.imageContainer{
+    position: relative;
+    text-align: center;
+}
+
+#rule1{
+    position: absolute;
+    top: 50%;
+    right: -45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+#map{
+    width: 130%;
+}
+/* _________________________________________________________________________________________________________ */
+/* panel to display game Results */
+/* Display info panel head */
+#displayResultPanel{
+    text-align: center;
+    margin-top: 80px;
+    width:90%;
+}
+
+/* Display panel Head styling */
+#displayResultPanelHead{
+    /* font-size: 3em; */
+    background-color:limegreen;
+    line-height: 0.7;
+    text-align: center;
+    border : 1px solid white; 
+    color: white;
+    text-transform:capitalize;
+    font-size: 35px;
+    font-weight: 900;
+}
+/* Display info panel body */
+#displayResultPanelBody{
+    height: 220px;
+    text-align: center;
+    border : 1px solid white; 
+    font-size: 28px;
+    overflow: auto;
+
+}
+
+#displayResultPanelFooter{
+    text-align: right;
+    background-color:#2ECC71;
+    border : 1px solid white; 
+    color: white;
+    font-weight: 500;
+     
+}

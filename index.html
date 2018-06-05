@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Delius|Yesteryear|Permanent+Marker|Rye" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="panel panel-body" id="mainBody">
+		<!-- Panels for Question, score and chances -->
+		<div class="col-lg-8 col-md-8 col-sm-12">
+			<div class="panel panel-body" id="questionPlaceHolder" hidden="true">
+                <p></p>
+            </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+            <div class="panel panel-default scoreAndremainingChances" hidden="true">
+                <div class=" panel-heading scoreAndremainingChancesHeading">
+                    <h4>Your Score</h4>
+                </div>
+                <div class="panel-body" >
+                    <div id="yourScore">
+                        <!-- Dynamically created score goes here  -->
+                    </div>
+                </div>
+            </div>  
+        </div>   
+
+        <!-- panel for displaying score -->
+		<div class="col-lg-2 col-md-2 col-sm-6  col-xs-6">
+			<div class="panel panel-default scoreAndremainingChances" hidden="true">
+				<div class="panel-heading scoreAndremainingChancesHeading">
+					<h4>Out of</h4>
+				</div>
+				<div class="panel-body" >
+                    <div id="remainingChances">
+                       <p></p>
+                    </div>
+				</div>
+			</div>
+        </div>
+    
+        <!-- Panel for displaying answeres -->
+		<div class="col-lg-12">
+			<div class="panel panel-body"  id="answerPlaceHolder" hidden="true">
+                    <!-- Dynamically created boxes  for keys are placed here -->
+            </div>    
+        </div>
+        
+        <!-- Panel for displaying wrong letters -->
+		<div class="col-lg-12">
+			<div class="panel panel-body"  id="wrongLettersPlaceHolder" hidden="true">
+                <!-- boxes for wrong keys are  dynimically careated by JS and placed here -->
+            </div>
+        </div>
+        
+        <!-- Panel for displaying fun facts/retry button / game over or instructions -->
+		<div class="col-lg-12">
+            <div class="panel panel-default" id = "displayInfoPanel" hidden="true">
+                <div class="panel-heading" id="displayInfoPanelHead">
+                    <!-- Answer/Key goes here -->
+                </div>
+                <div class="panel-body"  id="displayInfoPanelBody">
+                    <!-- More description/fact goes here -->
+                </div>
+                <div class="panel-footer" id="displayInfoPanelFooter">
+                    <input type="button" class="btn btn-default" id="playMoreButton" value='Play More'> </input>
+                </div>
+            </div>
+        </div>   
+
+
+        <div class="col-lg-11 col-lg-offset-1">
+            <div class="panel panel-default" id = "displayRulesPanel">
+                <audio autoplay>
+                        <source src='assets/sound/gameStart.mp3' type="audio/mpeg">
+                </audio>
+                <div class="panel-heading" id="displayRulesPanelHead">
+                    <p> Geography Trivia</p>
+                </div>
+                <div class="panel-body imageContainer"  id="displayRulesPanelBody" >
+                    <img src="assets/images/geography.jpg" id="map">
+                    <div id="rule1">
+                        <h1><u><b>Rules</b></u></h1>
+                        <h1>Use keys A-Z only </h1>
+                        <h1>Your goal is to answer the questions correctlly and get points </h1>
+                        <h1>The maximum points you can get is 10 </h1>
+                        <h1> Click buttons insted of hitting the ENTER key</h1>
+                    </div>
+                </div>
+                <div class="panel-footer" id="displayRulesPanelFooter">
+                    <input type="button" class="btn btn-default" id="rulesOkButton" value='Enter'> </input>
+                </div>
+            </div>
+        </div>   
+
+        <div class="col-lg-11 col-lg-offset-1">
+                <div class="panel panel-default" id = "displayResultPanel" hidden="true">
+                    <div class="panel-heading" id="displayResultPanelHead">
+                        <p> Result</p>
+                    </div>
+                    <div class="panel-body"  id="displayResultPanelBody">
+                        <h2> Asked : <span id="askedQuestion"></span></h2>
+                        <h2> Answered : <span id="answredQuestion"></span></h2>
+                        <h2> Score (%) : <span id="scorePercentage"></span></h2>
+                        
+                    </div>
+                    <div class="panel-footer" id="displayResultPanelFooter">
+                        <input type="button" class="btn btn-default" id="resetGame" value='Play again' onclick ="reloadpage()"> </input>
+                    </div>
+                </div>
+            </div>   
+	</div>
+</div>
+
+<script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+</html>
