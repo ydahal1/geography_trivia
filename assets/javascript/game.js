@@ -33,7 +33,7 @@ var attempt = 0;
 //Displaying rules
 $(document).ready(function() {
     $('#rule1').show(5000);
-    gameStart.play();
+    gameStart.play(); // Not working
 
 });
 
