@@ -6,21 +6,3 @@ This game is build with HTML5,CSS, Bootstrap, Javascript and jQuery. This is an 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Trivia questions used are copied from http://www.usefultrivia.com . Not to be used for commercial purpose. 
